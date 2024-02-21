@@ -72,3 +72,16 @@ flowchart TD
     D-->G["when the user focus the input"]
     G-->H["we mark the input as touched and as dirty"]
 `} />
+
+```mermaid
+flowchart TD
+    A["applyInputValidation: default value it's OnBlur"]---B
+    B["Input validation types"]-->C["OnBlur"]
+    B-->D["OnChange"]
+    C-->E["when the user leaves the input"]
+    E-->F["we mark the input as touched"]
+    D-->G["when the user focus the input"]
+    G-->H["we mark the input as touched and as dirty"]
+```
+
+
